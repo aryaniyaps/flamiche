@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-If you believe you've found something in Ceres GraphQL which has security implications,
+If you believe you've found something in Flamiche which has security implications,
 please **do not raise the issue in a public forum**.
 
 Send a description of the issue via email to [flamiche@googlegroups.com][security-mail].
