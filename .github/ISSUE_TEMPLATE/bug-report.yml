@@ -1,0 +1,73 @@
+name: Bug Report
+description: Report a bug you found in Flamiche
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking your time to contribute to Flamiche!
+        Please follow the given instructions, answering questions wherever relevant.
+        Issues are for concrete, actionable bugs and feature requests only - if
+        you're just asking for debugging help or technical support we have to direct
+        you elsewhere. If you just have questions or support requests please use:
+        - The Flamiche [mailing-list]
+        - GitHub discussions (feel free to engage with the community!)
+        [mailing-list]: https://groups.google.com/g/flamiche
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      description: Please confirm and check all the following options.
+      options:
+        - label: I added a descriptive title to this issue.
+          required: true
+        - label: I tried to find a similar issue and didn't find it.
+          required: true
+        - label: I searched the documentation regarding the issue.
+          required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Example Code
+      description: |
+        Please add a self-contained, [minimal, reproducible, example](https://stackoverflow.com/help/minimal-reproducible-example) with your use case.
+        If I (or someone) can copy it, run it, and see it right away, there's a much higher chance I (or someone) will be able to help you.
+      render: python
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os-type
+    attributes:
+      label: Operating System
+      description: What operating system are you on?
+      multiple: true
+      options:
+        - Linux
+        - Windows
+        - macOS
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: os-details
+    attributes:
+      label: Operating System Details
+      description: You can add more details about your OS here, in particular if you chose "Other".
+
+  - type: input
+    id: flamiche-version
+    attributes:
+      label: Flamiche Version
+      description: What version of Flamiche are you using?
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Add any additional information or screenshots you think are useful.

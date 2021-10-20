@@ -1,0 +1,73 @@
+name: Feature Request
+description: Suggest a new feature that you'd like to have in Flamiche
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking your time to contribute to Flamiche!
+        Please follow the given instructions, answering questions wherever relevant.
+        Issues are for concrete, actionable bugs and feature requests only - if
+        you're just asking for debugging help or technical support we have to direct
+        you elsewhere. If you just have questions or support requests please use:
+        - The Flamiche [mailing-list]
+        - GitHub discussions (feel free to engage with the community!)
+        [mailing-list]: https://groups.google.com/g/flamiche
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      description: Please confirm and check all the following options.
+      options:
+        - label: I added a descriptive title to this issue.
+          required: true
+        - label: I tried to find a similar issue and didn't find it.
+          required: true
+        - label: I searched the documentation regarding the issue.
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: |
+        What is your feature request?
+        Write a brief description explaining what you are trying to solve and what you are currently doing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: preferred-solution
+    attributes:
+      label: Preferred Solution
+      description: Please explain the solution you would like to propose.
+    validations:
+      required: true
+
+  - type: textarea
+    id: sample
+    attributes:
+      label: Sample Code
+      description: Please add sample code here to demonstrate API design changes, if relevant.
+      render: python
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: If you have any alternatives in mind, please put them here.
+
+  - type: input
+    id: flamiche-version
+    attributes:
+      label: Flamiche Version
+      description: What version of Flamiche are you using?
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Add any additional information or screenshots you think are useful.

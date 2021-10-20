@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+
+# distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# testing / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# virtual-env
+.env
+.venv
+env/
+venv/
+
+# PyCharm
+.idea
+*.iml
+
+# vscode
+.vscode
+
+# typing
+.mypy_cache/
