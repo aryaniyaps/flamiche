@@ -89,7 +89,7 @@ these can be merged into the project.
     ```
 
     If this is your first contribution to this repository, don't
-    forget to add your name to the [contributors list](CONTRIBUTORS.md).
+    forget to add your name to the [contributors list](../CONTRIBUTORS.md).
 
 ## Running the tests
 
@@ -111,4 +111,4 @@ $ tox
 ## License
 
 By contributing to Flamiche, you agree that your contributions will be licensed
-under the [license file](LICENSE).
+under the [license file](../LICENSE).
