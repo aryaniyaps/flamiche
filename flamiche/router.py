@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Callable, Sequence
+from typing import Sequence
 
 from flamiche.types import Receive, Scope, Send
 
@@ -8,9 +8,14 @@ __all__ = ("Router",)
 
 
 class Route:
-    def __init__(self, path: str, methods: Sequence[str]):
+    def __init__(self, path: str, methods: Sequence[str], name: str | None = None):
         self.path = path
+        self.params = {}
         self.methods = methods
+        self.name = name
+
+    def compile_path(self):
+        raise NotImplementedError
 
     def handles_method(self, method: str) -> bool:
         raise NotImplementedError
@@ -59,34 +64,39 @@ class Router:
     def add_router(self, router: Router, *, prefix: str = "") -> Router:
         raise NotImplementedError
 
-    def add_route(
-        self,
-        path: str,
-        methods: Sequence[str],
-        name: str | None = None,
-    ) -> Callable:
+    def normalize_url(self, url: str) -> str:
         raise NotImplementedError
 
-    def get(self, path: str, name: str | None = None) -> Callable:
+    def add_route(
+        self, path: str, methods: Sequence[str], name: str | None = None
+    ) -> None:
+        path = self.prefix + path
+        route = Route(path=path, methods=methods, name=name)
+        self.routes.append(route)
+
+    def route(self, path: str, methods: Sequence[str], name: str | None = None) -> None:
+        return self.add_route(path=path, name=name, methods=methods)
+
+    def get(self, path: str, name: str | None = None) -> None:
         return self.add_route(path=path, name=name, methods=["GET"])
 
-    def post(self, path: str, name: str | None = None) -> Callable:
+    def post(self, path: str, name: str | None = None) -> None:
         return self.add_route(path=path, name=name, methods=["POST"])
 
-    def patch(self, path: str, name: str | None = None) -> Callable:
+    def patch(self, path: str, name: str | None = None) -> None:
         return self.add_route(path=path, name=name, methods=["PATCH"])
 
-    def put(self, path: str, name: str | None = None) -> Callable:
+    def put(self, path: str, name: str | None = None) -> None:
         return self.add_route(path=path, name=name, methods=["PUT"])
 
-    def delete(self, path: str, name: str | None = None) -> Callable:
+    def delete(self, path: str, name: str | None = None) -> None:
         return self.add_route(path=path, name=name, methods=["DELETE"])
 
-    def options(self, path: str, name: str | None = None) -> Callable:
+    def options(self, path: str, name: str | None = None) -> None:
         return self.add_route(path=path, name=name, methods=["OPTIONS"])
 
-    def head(self, path: str, name: str | None = None) -> Callable:
+    def head(self, path: str, name: str | None = None) -> None:
         return self.add_route(path=path, name=name, methods=["HEAD"])
 
-    def trace(self, path: str, name: str | None = None) -> Callable:
+    def trace(self, path: str, name: str | None = None) -> None:
         return self.add_route(path=path, name=name, methods=["TRACE"])
