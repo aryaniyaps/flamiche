@@ -1,0 +1,40 @@
+site_name: Flamiche
+site_description: Fast, unopinionated, minimalist ASGI web framework for Python.
+site_author: Aryan Iyappan
+copyright: '&copy; 2021, Aryan Iyappan'
+theme:
+  name: material
+  palette:
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      primary: blue grey
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - scheme: slate 
+      media: "(prefers-color-scheme: dark)"
+      accent: light blue
+      primary: blue
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  features:
+    - search.suggest
+    - search.highlight
+    - search.share
+  icon:
+    repo: fontawesome/brands/github-alt
+repo_name: aryaniyaps/flamiche
+repo_url: https://github.com/aryaniyaps/flamiche
+edit_uri: ''
+plugins:
+- search
+nav:
+ - Home: 'index.md'
+markdown_extensions:
+- toc:
+    permalink: true
+extra:
+  social:
+  - icon: fontawesome/brands/github-alt
+    link: https://github.com/aryaniyaps/flamiche
