@@ -22,6 +22,7 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+    - content.tabs.link
   icon:
     repo: fontawesome/brands/github-alt
 repo_name: aryaniyaps/flamiche
@@ -30,10 +31,14 @@ edit_uri: ''
 plugins:
 - search
 nav:
- - Home: 'index.md'
+  - Introduction: 'index.md'
+  - Installation: 'installation.md'
 markdown_extensions:
 - toc:
     permalink: true
+- pymdownx.superfences
+- pymdownx.tabbed:
+    alternate_style: true 
 extra:
   social:
   - icon: fontawesome/brands/github-alt
