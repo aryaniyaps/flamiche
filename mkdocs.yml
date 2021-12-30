@@ -31,7 +31,7 @@ edit_uri: ''
 plugins:
 - search
 nav:
-  - Introduction: 'index.md'
+  - Introduction: 'introduction.md'
   - Installation: 'installation.md'
 markdown_extensions:
 - toc:
