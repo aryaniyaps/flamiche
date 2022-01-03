@@ -11,7 +11,7 @@ theme:
       toggle:
         icon: material/lightbulb
         name: Switch to dark mode
-    - scheme: slate 
+    - scheme: slate
       media: "(prefers-color-scheme: dark)"
       accent: light blue
       primary: blue
@@ -38,7 +38,7 @@ markdown_extensions:
     permalink: true
 - pymdownx.superfences
 - pymdownx.tabbed:
-    alternate_style: true 
+    alternate_style: true
 extra:
   social:
   - icon: fontawesome/brands/github-alt
