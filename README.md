@@ -17,12 +17,12 @@
 </p>    
 </p>
 
-# What is Flamiche?
+## Introduction
 
-Flamiche is a lightweight [WSGI]/ [ASGI] micro web framework. It is designed to be easy to begin with, and has the ability
-to scale up to complex applications.
+Flamiche is a lightweight [WSGI](https://wsgi.readthedocs.io/en/latest/)/ [ASGI](https://asgi.readthedocs.io/en/latest/) micro 
+web framework. It is designed to be easy to begin with, and has the ability to scale up to complex applications.
 
-## Installing Flamiche
+## Installing
 
 Flamiche can be installed/ updated using [pip](https://pip.pypa.io/en/stable/getting-started/).
 
