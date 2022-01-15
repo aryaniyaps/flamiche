@@ -47,7 +47,7 @@ pluggy==1.0.0
     # via
     #   pytest
     #   tox
-pre-commit==2.15.0
+pre-commit==2.16.0
     # via -r requirements/dev.in
 py==1.10.0
     # via
@@ -60,7 +60,7 @@ pytest==6.2.5
     #   -r requirements\tests.in
     #   pytest-asyncio
     #   pytest-cov
-pytest-asyncio==0.16.0
+pytest-asyncio==0.17.0
     # via -r requirements\tests.in
 pytest-cov==3.0.0
     # via -r requirements\tests.in
@@ -79,7 +79,7 @@ tomli==1.2.1
     # via
     #   coverage
     #   pep517
-tox==3.24.4
+tox==3.24.5
     # via -r requirements/dev.in
 virtualenv==20.8.1
     # via
