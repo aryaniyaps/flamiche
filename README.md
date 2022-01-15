@@ -3,7 +3,7 @@
 <img alt="Flamiche" height=100 src="/assets/logo.png"/>
 </a>
 <br/>
-    Fast, unopinionated, minimalist <a href="https://asgi.readthedocs.io/en/latest/">ASGI</a> web framework for <a href="https://www.python.org/">Python</a>.
+    Unopinionated and minimalist <a href="https://wsgi.readthedocs.io/en/latest/">WSGI</a>/ <a href="https://asgi.readthedocs.io/en/latest/">ASGI</a> web framework for <a href="https://www.python.org/">Python</a>.
 <p align="center">
   <a href="https://github.com/aryaniyaps/flamiche/actions">
     <img alt="Build Status" height="20px" src="https://github.com/aryaniyaps/flamiche/workflows/tests/badge.svg" />
@@ -16,3 +16,16 @@
   </a>
 </p>    
 </p>
+
+# What is Flamiche?
+
+Flamiche is a lightweight [WSGI]/ [ASGI] micro web framework. It is designed to be easy to begin with, and has the ability
+to scale up to complex applications.
+
+## Installing Flamiche
+
+Flamiche can be installed/ updated using [pip](https://pip.pypa.io/en/stable/getting-started/).
+
+```text
+pip install -U Flamiche
+```
