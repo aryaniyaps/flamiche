@@ -1,2 +1,3 @@
-def create_asgi_application() -> None:
+def asgi_factory() -> None:
+    """ASGI application factory."""
     pass

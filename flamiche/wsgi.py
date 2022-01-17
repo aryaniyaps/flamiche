@@ -1,2 +1,3 @@
-def create_wsgi_application() -> None:
+def wsgi_factory() -> None:
+    """WSGI application factory."""
     pass

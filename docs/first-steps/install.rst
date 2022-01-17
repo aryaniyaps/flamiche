@@ -13,12 +13,14 @@ typing python from your shell.
 
 .. _here: https://www.python.org/downloads/
 
-You should see something like:::
+You should see something like:
 
-    Python 3.x.y
-    [GCC 4.x] on linux
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>>
+    .. code-block:: text
+
+        Python 3.x.y
+        [GCC 4.x] on linux
+        Type "help", "copyright", "credits" or "license" for more information.
+        >>>
 
 We **highly recommend** and officially support only the latest patch release of Python.
 
@@ -47,19 +49,19 @@ Create a project folder and a venv folder within:
     
     .. tab:: MacOS/Linux
 
-        ```text
-        $ mkdir myproject
-        $ cd myproject
-        $ python3 -m venv venv
-        ```
+        .. code-block:: text
+
+            $ mkdir myproject
+            $ cd myproject
+            $ python3 -m venv venv
 
     .. tab:: Windows
 
-        ```text
-        > mkdir myproject
-        > cd myproject
-        > py -3 -m venv venv
-        ```
+        .. code-block:: text
+
+            > mkdir myproject
+            > cd myproject
+            > py -3 -m venv venv
 
 Activate the environment
 ========================
@@ -70,22 +72,24 @@ Before you work on your project, activate the corresponding environment:
 
     .. tab:: MacOS/Linux
 
-        ```text
-        $ . venv/bin/activate
-        ```
+        .. code-block:: text
+
+            $ . venv/bin/activate
     
     .. tab:: Windows
 
-        ```text
-        > venv\Scripts\activate
-        ```
+        .. code-block:: text
+
+            > venv\Scripts\activate
 
 Install Flamiche
 ================
 
-Within the activated environment, installation can be done using `pip`_:::
+Within the activated environment, installation can be done using `pip`_:
 
-    pip install flamiche
+    .. code-block:: text
+
+        pip install flamiche
 
 .. _pip: https://pip.pypa.io/en/stable/
 
