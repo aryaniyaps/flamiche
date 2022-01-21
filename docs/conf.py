@@ -37,11 +37,15 @@ source_suffix = ".rst"
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ["sphinx.ext.intersphinx", "sphinx.ext.autodoc", "sphinx_tabs.tabs"]
+extensions = [
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.autodoc",
+    "sphinx_tabs.tabs",
+    "sphinx_copybutton",
+]
 
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3/", None),
-    "gqlcore": ("https://graphql-core-3.readthedocs.io/en/latest/", None),
 }
 
 # Disable docstring inheritance
