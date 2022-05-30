@@ -1,4 +1,4 @@
 -r tests.in
-pip-tools==6.4.0
+pip-tools==6.6.2
 pre-commit==2.16.0
 tox==3.24.5
