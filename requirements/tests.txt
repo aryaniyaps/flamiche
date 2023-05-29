@@ -4,11 +4,7 @@
 #
 #    pip-compile requirements/tests.in
 #
-atomicwrites==1.4.0
-    # via pytest
 attrs==21.2.0
-    # via pytest
-colorama==0.4.4
     # via pytest
 coverage[toml]==6.0.2
     # via pytest-cov
@@ -29,7 +25,7 @@ pytest==6.2.5
     #   pytest-cov
 pytest-asyncio==0.17.0
     # via -r requirements/tests.in
-pytest-cov==3.0.0
+pytest-cov==4.1.0
     # via -r requirements/tests.in
 toml==0.10.2
     # via pytest
