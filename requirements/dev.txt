@@ -4,21 +4,14 @@
 #
 #    pip-compile requirements/dev.in
 #
-atomicwrites==1.4.0
-    # via pytest
 attrs==21.2.0
     # via pytest
-backports.entry-points-selectable==1.1.0
+backports-entry-points-selectable==1.1.0
     # via virtualenv
 cfgv==3.3.1
     # via pre-commit
 click==8.0.3
     # via pip-tools
-colorama==0.4.4
-    # via
-    #   click
-    #   pytest
-    #   tox
 coverage[toml]==6.0.2
     # via pytest-cov
 distlib==0.3.3
@@ -57,13 +50,13 @@ pyparsing==2.4.7
     # via packaging
 pytest==6.2.5
     # via
-    #   -r requirements\tests.in
+    #   -r requirements/tests.in
     #   pytest-asyncio
     #   pytest-cov
 pytest-asyncio==0.17.0
-    # via -r requirements\tests.in
+    # via -r requirements/tests.in
 pytest-cov==3.0.0
-    # via -r requirements\tests.in
+    # via -r requirements/tests.in
 pyyaml==6.0
     # via pre-commit
 six==1.16.0
@@ -79,7 +72,7 @@ tomli==1.2.1
     # via
     #   coverage
     #   pep517
-tox==3.24.5
+tox==3.25.1
     # via -r requirements/dev.in
 virtualenv==20.8.1
     # via
