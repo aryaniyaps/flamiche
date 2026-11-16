@@ -2,7 +2,7 @@
 Flamiche |version| documentation
 ================================
 
-Flamiche is a lightweight `WSGI`_/ `ASGI`_ micro web framework. It is designed to 
+Flamiche is a lightweight `WSGI`_/ `ASGI`_ micro web framework. It is designed to
 be easy to begin with, and has the ability to scale up to complex applications.
 
 .. _WSGI: https://wsgi.readthedocs.io/en/latest/
